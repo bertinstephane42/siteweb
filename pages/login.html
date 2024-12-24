@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<?php include '../includes/header.php'; ?>
+<body>
+    <div class="form-container">
+        <h2>Connexion</h2>
+        <!-- Affichage d'un message d'erreur en cas de mauvais identifiants -->
+        <?php
+        if (isset($_GET['error'])) {
+            echo '<p class="error">Nom d\'utilisateur ou mot de passe incorrect.</p>';
+        }
+        ?>
+        <form action="login.php" method="POST">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore inscrit ? <a href="register.php" class="button">Créez un compte ici</a></p>
+        <p><a href="../index.php" class="button">Retour à la page d'accueil</a></p>
+    </div>
+</body>
+</html>
+<?php include '../includes/footer.php'; ?>
