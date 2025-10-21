@@ -5,7 +5,7 @@ session_start();
 // Vérifier si l'utilisateur est connecté
 if (!isset($_SESSION['user_id']) || !is_numeric($_SESSION['user_id'])) {
     session_destroy();
-    header("Location: login.html");
+    header("Location: login.php");
     exit();
 }
 
@@ -144,6 +144,10 @@ try {
                 <?php endif; ?>
             </tbody>
         </table>
+	<!-- Zone d'affichage du contenu d'article -->
+	<div id="article-detail" class="article-detail">
+    	<p>Sélectionnez un article pour afficher son contenu ici.</p>
+	</div>
         <p><a href="dashboard.php" class="button">Retour au tableau de bord</a></p>
     </div>
 </body>
