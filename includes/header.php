@@ -43,7 +43,7 @@ session_regenerate_id(true);
                         echo '<li><a href="../pages/dashboard.php">Tableau de bord</a></li>';
                         echo '<li><a href="../pages/logout.php">Se déconnecter</a></li>';
                     } else {
-                        echo '<li><a href="../pages/login.html">Se connecter</a></li>';
+                        echo '<li><a href="../pages/login.php">Se connecter</a></li>';
                         echo '<li><a href="../pages/register.php">S\'inscrire</a></li>';
                     }
                 ?>
