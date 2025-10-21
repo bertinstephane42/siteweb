@@ -313,3 +313,11 @@ form label {
 form textarea {
     resize: vertical;
 }
+
+.article-detail {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
