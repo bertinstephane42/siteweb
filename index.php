@@ -29,7 +29,7 @@ session_start();
                 if (!isset($_SESSION['user_id']) || !is_numeric($_SESSION['user_id'])) {
                 ?>
                     <a href="/pages/register.php" class="button">Créer un compte</a>
-                    <a href="/pages/login.html" class="button">Connexion</a>
+                    <a href="/pages/login.php" class="button">Connexion</a>
                 <?php
                 }
                 ?>
@@ -71,7 +71,7 @@ session_start();
                     foreach ($articles as $article):
                 ?>
                         <li>
-                            <a href="#" class="article-link" data-article-id="<?php echo $article['id']; ?>">
+                            <a href="#" class="article-link" data-id="<?php echo $article['id']; ?>">
                                 <?php echo htmlspecialchars($article['title']); ?> -
                                 <small><?php echo date('d/m/Y', strtotime($article['created_at'])); ?></small>
                             </a>
@@ -85,6 +85,11 @@ session_start();
             </ul>
         </section>
     </main>
+
+        <!-- Zone d'affichage du contenu d'article -->
+	<div id="article-detail" class="article-detail">
+    	<p>Sélectionnez un article pour afficher son contenu ici.</p>
+	</div>
 
     <!-- Inclusion du pied de page -->
     <?php include './includes/footer.php'; ?>
