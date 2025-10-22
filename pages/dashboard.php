@@ -38,7 +38,7 @@ include '../includes/header.php';
 
         <p><a href="manage_articles.php" class="button">Gérer vos articles</a></p>
         <p><a href="manage_account.php" class="button">Gérer votre compte</a></p>
-        <p><a href="logout.php" class="button">Se déconnecter</a></p>
+        <p><a href="logout.php" class="button logout-button">Se déconnecter</a></p>
     </div>
 </body>
 </html>
