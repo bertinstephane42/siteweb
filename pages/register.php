@@ -21,9 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($username) || empty($password) || empty($password_confirm)) {
         $error = "Tous les champs sont obligatoires.";
     // Vérifier la longueur minimale du mot de passe
-    elseif (strlen($password) < 6) {
+    } elseif (strlen($password) < 6) {
         $error = "Le mot de passe doit contenir au moins 6 caractères.";
-    } 
     // Vérifier la correspondance des mots de passe
     } elseif ($password !== $password_confirm) {
         $error = "Les mots de passe ne correspondent pas.";
