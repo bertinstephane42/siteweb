@@ -348,3 +348,15 @@ footer .footer-socials a:hover img {
         max-width: 100%;
     }
 }
+
+/* === Bouton de déconnexion (rouge) === */
+.logout-button {
+    background-color: #d9534f; /* rouge Bootstrap-like */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c9302c; /* rouge plus foncé au survol */
+}
