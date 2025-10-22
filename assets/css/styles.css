@@ -10,6 +10,15 @@ body {
     line-height: 1.6;
     color: #2b2b2b;
     background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* occuper toute la hauteur de l'écran */
+    margin: 0;   
+}
+
+.dashboard-container {
+    flex: 1; /* prend tout l'espace disponible avant le footer */
+    padding: 40px 20px; /* espace autour du contenu */
 }
 
 .container {
