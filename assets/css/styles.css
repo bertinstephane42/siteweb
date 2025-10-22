@@ -73,6 +73,11 @@ header nav ul li a:hover {
     font-weight: 700;
 }
 
+.hero h1 {
+    color: #fdfdfd; /* blanc très clair pour contraster */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* ombre douce pour lisibilité */
+}
+
 .hero p {
     margin-bottom: 30px;
     font-size: 1.2em;
@@ -359,4 +364,33 @@ footer .footer-socials a:hover img {
 
 .logout-button:hover {
     background-color: #c9302c; /* rouge plus foncé au survol */
+}
+
+/* === Liens globaux === */
+a {
+    color: #0077c8; /* bleu légèrement plus vif */
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #00bcd4; /* cyan du thème */
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: #0097a7; /* même teinte que le bouton hover */
+    transform: translateY(-1px);
+}
+
+a:hover::after {
+    width: 100%;
 }
